@@ -1,5 +1,6 @@
 # Fokus.app
- Projeto de exercício de formação de Front-End da Alura do curso: "JavaScript: explorando a manipulação de elementos e da localStorage"
+ Projeto de exercício de formação de Front-End da Alura dos cursos: 
+"JavaScript: manipulando elementos no DOM" e "JavaScript: explorando a manipulação de elementos e da localStorage"
  
 ## Tecnologias Utilizadas no Projeto
 
