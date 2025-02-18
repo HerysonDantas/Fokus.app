@@ -127,7 +127,14 @@ const removerTarefas = (somenteCompletas) => {
 
     const seletor = somenteCompletas ? ".app__section-task-list-item-complete" : ".app__section-task-list-item";
     document.querySelectorAll(seletor).forEach(elemento => {
-        elemento.remove();
+        //verifica se há algum elemento ativo a ser removido e se verdadeiro limpa a descrição da tarefa ativa
+        if(elemento.classList.contains("app__section-task-list-item-active")) {
+            elemento.remove();
+            paragraDescricaoTarefa.textContent = '';
+        }
+        else{
+            elemento.remove();
+        }
     });
 
     tarefas = somenteCompletas ? tarefas.filter(tarefa => !tarefa.completa) : [];
